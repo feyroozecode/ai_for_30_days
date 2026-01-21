@@ -36,3 +36,8 @@ def basic_stats(df):
         'std': df.select_dtypes(include=[np.number]).std().to_dict(),
         'shape': df.shape
     }
+
+
+if __name__ == "__main__":
+    df = load_sample_data()
+    print(basic_stats(df))
