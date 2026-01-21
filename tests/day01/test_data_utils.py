@@ -1,4 +1,4 @@
-"""
+""" 
 Tests for data_utils.py
 """
 
@@ -7,10 +7,9 @@ import pandas as pd
 import numpy as np
 from src.day01.data_utils import load_sample_data, basic_stats
 
-
 def test_load_sample_data():
-    """Test that load_sample_data returns a DataFrame with expected columns."""
-    df = load_sample_data()
+    """ Test that load_sample_data returns a DataFrane with expected columns """
+    df = load_sample_data();
 
     assert isinstance(df, pd.DataFrame)
     assert 'feature1' in df.columns
@@ -20,7 +19,7 @@ def test_load_sample_data():
 
 
 def test_basic_stats():
-    """Test that basic_stats returns correct statistics."""
+    """ Test that basic_stats returns correct statistics """
     df = load_sample_data()
     stats = basic_stats(df)
 
@@ -31,12 +30,13 @@ def test_basic_stats():
     assert isinstance(stats['mean'], dict)
     assert isinstance(stats['std'], dict)
 
-
 def test_basic_stats_with_empty_df():
-    """Test basic_stats with empty DataFrame."""
+    """ Test that basic_stats returns correct statistics for empty data"""
     df = pd.DataFrame()
     stats = basic_stats(df)
 
     assert stats['shape'] == (0, 0)
     assert stats['mean'] == {}
     assert stats['std'] == {}
+
+
