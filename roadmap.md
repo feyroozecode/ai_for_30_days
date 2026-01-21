@@ -30,7 +30,11 @@ Your goal isn't to become a machine learning research scientist. It's to become 
 
 ### **Day 1-2: The ML Landscape & Your Core Data Toolkit**
 -   **Concepts:** What is ML? Supervised vs. Unsupervised Learning. The ML Workflow (Data -> Prep -> Train -> Evaluate -> Deploy).
--   **Action:** Learn the basics of **Pandas** for data manipulation, **NumPy** for numerical operations, and **Matplotlib/Seaborn** for basic plotting.
+-   **Action:**
+    - Learn the basics of **Pandas** for data manipulation, **NumPy** for numerical operations, and **Matplotlib/Seaborn** for basic plotting.
+    - Set up your development environment: Create a Python virtual environment and install necessary libraries (Pandas, NumPy, Matplotlib, Seaborn).
+    - Write simple code tests for data loading and basic operations using a testing framework like pytest.
+    - Create Markdown documentation for your environment setup and initial ML concepts learned.
 -   **Resource:** Kaggle's "Pandas" micro-course.
 
 ### **Day 3-4: Your First Models - Linear & Logistic Regression**
